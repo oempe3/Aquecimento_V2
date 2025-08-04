@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Aquecimento de Motores</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Análise de Aquecimento de Motores</h1>
+            <p>Comparação de Performance dos Aquecedores UG#06, UG#19 e UG#20</p>
+        </header>
+
+        <main class="main-content">
+            <section class="chart-section">
+                <div class="chart-container">
+                    <canvas id="temperatureChart"></canvas>
+                </div>
+            </section>
+
+            <section class="info-cards">
+                <div class="card" id="motor06-card">
+                    <h3>Motor #06</h3>
+                    <div class="motor-specs">
+                        <p><strong>Circuito:</strong> Trifásico</p>
+                        <p><strong>Corrente por fase:</strong> 26,1 A</p>
+                        <p><strong>Potência 1 estágio:</strong> 13,5 kW</p>
+                        <p><strong>Potência 2 estágios:</strong> 27 kW</p>
+                    </div>
+                    <div class="consumption-data">
+                        <p><strong>Média total de consumo:</strong> <span id="motor06-total">-</span> kWh</p>
+                    </div>
+                </div>
+
+                <div class="card" id="motor19-card">
+                    <h3>Motor #19</h3>
+                    <div class="motor-specs">
+                        <p><strong>Circuito:</strong> Trifásico</p>
+                        <p><strong>Corrente por fase:</strong> 26,1 A</p>
+                        <p><strong>Potência 1 estágio:</strong> 13,5 kW</p>
+                        <p><strong>Potência 2 estágios:</strong> 27 kW</p>
+                    </div>
+                    <div class="consumption-data">
+                        <p><strong>Média total de consumo:</strong> <span id="motor19-total">-</span> kWh</p>
+                    </div>
+                </div>
+
+                <div class="card" id="motor20-card">
+                    <h3>Motor #20</h3>
+                    <div class="motor-specs">
+                        <p><strong>Circuito:</strong> Bifásico</p>
+                        <p><strong>Corrente por fase:</strong> 45,2 A</p>
+                        <p><strong>Potência 1 estágio:</strong> 18 kW</p>
+                        <p><strong>Potência 2 estágios:</strong> 36 kW</p>
+                    </div>
+                    <div class="consumption-data">
+                        <p><strong>Média total de consumo:</strong> <span id="motor20-total">-</span> kWh</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 Análise de Performance de Motores</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

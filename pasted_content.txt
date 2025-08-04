@@ -1,0 +1,81 @@
+Gostaria de uma página em HTML para acomodar um gráfico um layout moderno tipo flutter para publicar de forma fácil no git hub pages
+
+Envio um CSV com um mesmo tempo para comparar a performance do aquecedor:
+O eixo X deve ser a coluna A – iniciando a 00:00:00
+O eixo Y as colunas B, C e D 
+Curva Y coluna B – Aquecimento UG#06 –Azul 
+Curva Y coluna C – Aquecimento UG#19 – Amarelo
+Curva Y coluna D – Aquecimento UG#20 – Verde
+Em Y – temperatura de 20ºC até 90ºC
+[Toolip] ao passa nas linhas coloridas em Y parecer o nome do respectivo motor, valor de temperatura (valor de Y) e o cálculo do tempo de aquecimento (valor de X – tempo inicial 00:00:00)
+A visualização do gráfico inicial deve ser com todos os valores de Y das colunas B, C e D
+Marcar com uma linha tracejada laranja por todo eixo Y destacando quando chegar a 50,1 ºC colunas B, C e D (Toolip ao encostar o mouse = Temp. mim para partida)
+
+Quando estiver em curva ascendente: 
+Adicionar ao toolip
+taxa de elevação de temperatura em ºC/mim
+Adicionar a informação “2 estágios ligados”  
+Quando iniciar em curva decrescente: 
+ Colocar linha travejada cinza no eixo Y de quando 1 estágio desliga (Só verificar quando inicia diminuir a temperatura)
+Adicionar a informação “1 estágios ligado”  
+
+
+Fazer o cálculo de consumo de energia:
+Cálculo de consumo de energia – UG#20 (coluna D
+Tensão = 480V
+Circuito bifásico:
+Corrente por fase = 45,2 A
+Potência com 2 estágio = 36kW
+Potência com 1 estágio= 18kW
+Observação tempo com 2 estágios = elevação de temperatura
+Observação tempo com 1 estágios = diminui a temperatura do gráfico
+ 
+Cálculo de consumo de energia – UG#06 e UG#19
+Tensão = 480V
+Corrente por fase = 26,1A
+Circuito trifásico 
+Potência com 1 estágio = 13,5kW
+Potência com 2 estágio= 27kW
+Observação tempo com 2 estágios = elevação de temperatura
+Observação tempo com 1 estágios = diminui a temperatura do gráfico
+Fazer uma média de consumo por todo o tempo do csv (coluna A) em kW/h
+Fazer uma média de consumo por todo o tempo com os 2 estágios ligados (curva ascendente em Y) do csv (coluna A) em kW/h
+Fazer uma média de consumo por todo o tempo com 1 estágio ligado (curva descendente em Y) do csv (coluna A) em kW/h
+
+
+
+
+Embaixo do gráfico deve ter 3 quadros um ao lado do outro com as informações: 
+Motor #06
+Circuito trifásico 
+Corrente por fase = 26,1 A
+Potência com 1 estágio = 13,5kW
+Potência com 2 estágios = 27kW
+Média consumo com 1 estágio = XXXX (Valor calculado)
+Média consumo com 2 estágios = XXXX (Valor calculado)
+Media total = XXXX (Valor calculado)
+Motor #19
+Circuito trifásico 
+Corrente por fase = 26,1 A
+Potência com 1 estágio = 13,5kW
+Potência com 2 estágios = 27kW
+Média consumo com 1 estágio = XXXX (Valor calculado)
+Média consumo com 2 estágios = XXXX (Valor calculado)
+Media total = XXXX (Valor calculado)
+
+
+
+
+
+
+
+
+
+Motor #20
+Circuito bifásico 
+Corrente por fase = 45,2 A
+Potência com 1 estágio = 18kW
+Potência com 2 estágios = 36kW
+Média consumo com 1 estágio = XXXX (Valor calculado)
+Média consumo com 2 estágios = XXXX (Valor calculado)
+Media total = XXXX (Valor calculado)
